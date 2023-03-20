@@ -1,0 +1,319 @@
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet">
+        <style>
+
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            body{
+                font-family: 'Times New Roman', Times, serif;
+            }
+            a{
+                text-decoration: none;
+                color: white;
+                font-family: 'Poppins', sans-serif;
+                font-weight: 300;
+            }
+
+            li{
+                list-style: none;
+            }
+
+            .navbar{
+                padding-left: 10%;
+                padding-right: 10%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding-top: 10px;
+                padding-bottom: 10px;
+               
+                background-color: red;
+                color: #fff;
+            }
+
+            .nav-links{
+                color: #fff;
+            }
+            .logo{
+                font-size: 32px;
+                font-family: 'Poppins', sans-serif;
+                font-weight: 500;
+            }
+
+            .menu{
+                display: flex;
+                gap: 1em;
+                font-size: 18px;
+            }
+
+            /* .menu li:hover{
+                background-color: green;
+                border-radius: 5px;
+                transition: 0.3s ease;
+            } */
+
+            .menu li{
+                padding: 5px 14px;
+            }
+
+            .services{
+                position: relative;
+            }
+            .dropdown{
+                background-color: rgb(1, 139, 139);
+                padding: 1em 0;
+                position: absolute;
+                display: none;
+                border-radius: 8px;
+                top: 35px;
+            }
+
+            .dropdown li + li{
+                margin-top: 10px;
+            }
+
+            .dropdown li{
+                padding: 0.5em 1em;
+                width: 8em;
+                text-align: center;
+            }
+
+            .dropdown li:hover{
+                background-color: aqua;
+            }
+
+            .services:hover .dropdown{
+                display: block;
+            }
+            .content{
+                width: auto;
+                padding-left: 10%;
+                padding-right: 10%;
+                margin-top: 20px;
+                height: 600px;
+                display: grid;
+                grid-template-columns: 1fr 3fr;
+                column-gap: 40px;
+            }
+
+           
+
+            .content-right{
+               width: auto;
+               height: 100%;
+                background: red;
+                
+                border-radius: 20px;
+            }
+
+            .img-head{
+                
+                width: 100%;
+                height: 450px;
+                border-radius: 20px;
+                object-fit: cover;
+            }
+
+            .text-head{
+                color: white;
+                font-family: 'Poppins', sans-serif;
+                font-weight: 700;
+                font-size: 24px;
+            }
+            .text-subcontent-right{
+                margin: 20px;
+            }
+            .text-content{
+                font-family: 'Poppins', sans-serif;
+            color: white;
+            }
+
+            .sidebar-atas{
+                width: 100%;
+                height: 100%;
+                border-radius: 20px;
+                background: red;
+            }
+            .sidebar-bawah{
+                width: 100%;
+                height: 100%;
+                border-radius: 20px;
+                background: red;
+            }
+
+            .sidebar{
+                display: grid;
+                width: auto;
+                height: 100%;
+                background: red;
+                border-radius: 20px;
+                grid-template-rows: 1fr 1fr;
+                row-gap: 20px;
+            }
+            .img-sidebar{
+                width: 100%;
+                height: 100%;
+                border-radius: 20px;
+                object-fit: cover;
+            }
+            .sidebar-text-head{
+                font-family: 'Poppins',sans-serif;
+                font-size: 16px;
+                color: white;
+                font-weight: 700;
+            }
+            .sidebar-text-content{
+                font-family: 'Poppins',sans-serif;
+                font-size: 12px;
+                color: white;
+                font-weight: 500;
+            }
+            .sidebar-text{
+                margin: 10px;
+            }
+
+            .sidebar__inside{
+                padding: 20px 20px 20px 20px;
+            }
+
+            .sidebar__inside_headtext{
+                font-family: 'Poppins', sans-serif;
+                font-size: 20px;
+                font-weight: 700;
+                color: white;
+            }
+
+
+            .footer{
+                background: red;
+                width: 100%;
+                height: auto;
+                margin-top: 20px;
+            }
+            .footer-cp-text{
+                color: white;
+                font-family: 'Poppins', sans-serif  ;
+                text-align: center;
+            }
+
+            .inside-footer{
+                padding-left: 10%;
+                padding-right: 10%;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                margin: auto;
+                font-size: 12px;
+            }
+            
+        </style>
+
+    </head>
+
+    <body>
+
+        <nav class="navbar">
+
+            <div class="logo">LFC</div>
+
+            <ul class="nav-links">
+                <!-- <input type="checkbox" id="checkbox_toggle"/>
+                <label for="checkbox_toggle" class="hamburger">&#9776;</label> -->
+                <div class="menu">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+
+                    <li class="services">
+
+                        <a href="/">Services</a>
+                        
+                        <!-- DROPDOWN MENU -->
+                        
+                        <ul class="dropdown">
+                        
+                       <li><a href="/">Dropdown 1 </a></li>
+                        
+                        <li><a href="/">Dropdown 2</a></li>
+                        
+                        <li><a href="/">Dropdown 2</a></li>
+                        
+                        <li><a href="/">Dropdown 3</a></li>
+                        
+                        <li><a href="/">Dropdown 4</a></li>
+                        
+                        </ul>
+                        
+                        </li>
+
+                        <li><a href="/">Pricing</a></li>
+                    <li><a href="/">Contact</a></li>
+
+                </div>
+            </ul>
+        </nav>
+
+        <div class="content">
+            
+            <div class="sidebar">
+
+                <!-- <div class="sidebar-atas">
+                    <img src="liv.jpg" class="img-sidebar"/>
+                    <div class="sidebar-text">
+                        <p class="sidebar-text-head">Liverpool Juara UCL</p>
+                        <p class="sidebar-text-content">Biasa tim langganan juara wkwkw</p>
+                    </div>
+                </div>
+                <div class="sidebar-bawah">
+                    <img src="thisisanflied.jpg" class="img-sidebar"/>
+                    <div class="sidebar-text">
+                        <p class="sidebar-text-head">Liverpool Juara EPL</p>
+                        <p class="sidebar-text-content">King Of England ni bos</p>
+                    </div>
+                </div> -->
+
+                <img src="promo.jpg" class="img-sidebar"/>
+
+                <div class="sidebar__inside">
+                    <p class="sidebar__inside_headtext">LFC Store</p>
+
+                    <nav>
+                        <ul>
+                            <li><a href="#">Nike</a></li>
+                            <li><a href="#">Fashion</a></li>
+                            <li><a href="#">Souvenirs</a></li>
+                            <li><a href="#">Last Chance</a></li>
+                            <li><a href="#">Gifts</a></li>
+                            <li><a href="#">Signed</a></li>
+                            <li><a href="#">Player</a></li>
+                        </ul>
+                    </nav>
+
+                </div>
+            </div>
+
+            <div class="content-right">
+                <div class="sub-content-right">
+                    <img src="winpl.jpeg" class="img-head"/>
+                    <div class="text-subcontent-right">
+                        <p class="text-head">Setelah Taklukkan Eropa dan Dunia, Liverpool Jadi Raja Inggris</p>
+                        <p class="text-content">Liverpool meresmikan diri sebagai raja Inggris setelah menerima trofi juara Premier League. Trofi yang melengkapi setahun penuh kegemilangan untuk The Reds.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            
+        </div>
+            
+        <div class="footer">
+            <div class="inside-footer">
+
+                <br>
+                <p class="footer-cp-text">© COPYRIGHT 2023 THE LIVERPOOL FOOTBALL CLUB AND ATHLETIC GROUNDS LIMITED. ALL RIGHTS RESERVED. MATCH STATISTICS SUPPLIED BY OPTA SPORTS DATA LIMITED. REPRODUCED UNDER LICENCE FROM FOOTBALL DATACO LIMITED. ALL RIGHTS RESERVED.</p>
+            </div>
+        </div>
+    </body>
+</html>
